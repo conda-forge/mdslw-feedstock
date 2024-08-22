@@ -1,5 +1,5 @@
 {% set name = "mdslw" %}
-{% set version = "0.8.0" %}
+{% set version = "0.12.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/razziel89/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ecb16c0a1d2456edbfd3471d3a99ae8813762d8212434bb945688b1de072656a
+  sha256: 02c3bf9e6f4df02f4867c9a83be246c5491088a3c0a373f10cc8d834bf3d73df
 
 build:
   number: 0
