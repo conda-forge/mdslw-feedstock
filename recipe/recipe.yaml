@@ -1,0 +1,37 @@
+context:
+  version: 0.12.4
+
+package:
+  name: mdslw
+  version: ${{ version }}
+
+source:
+  url: https://github.com/razziel89/mdslw/archive/${{ version }}.tar.gz
+  sha256: f2b3e1aabf9260f3f9d1cd5048078e3b4b41e4d1c688c69f365349cfb7cff710
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - ${{ compiler('rust') }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+    - cargo-bundle-licenses
+
+tests:
+  - script:
+      - mdslw --help
+
+about:
+  license: MIT
+  license_file:
+    - LICENCE
+    - THIRDPARTY.yml
+  summary: "Prepare your markdown for easy diff'ing!"
+  homepage: https://github.com/razziel89/mdslw
+  repository: https://github.com/razziel89/mdslw
+
+extra:
+  recipe-maintainers:
+    - danielnachun
