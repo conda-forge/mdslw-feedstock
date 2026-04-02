@@ -1,5 +1,5 @@
 context:
-  version: "0.17.0"
+  version: "0.17.1"
 
 package:
   name: mdslw
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/razziel89/mdslw/archive/${{ version }}.tar.gz
-  sha256: 687b2a2dd76b45055e61f33b0c72de802b196dc29fb3775cdc52bdec6b480fa0
+  sha256: 4dadf34036002909b1c2e547facb88b37a3a3ac0cc102d9a924fcc0161db1637
 
 build:
   number: 0
